@@ -14,7 +14,7 @@ var Svg = d3.select("#my_dataviz")
           "translate(" + margin.left + "," + margin.top + ")");
 
 //Read the data
-d3.csv("../../Resources/diamonds.csv", function(data) {
+d3.csv("../../MachineLearning/Resources/CSV/diamonds.csv", function(data) {
   console.log(data);
   // Add X axis
   var x = d3.scaleLinear()
