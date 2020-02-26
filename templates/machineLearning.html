@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Machine Learning</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="../static/css/style.css">
+ <!-- <link rel="stylesheet" href="styles.css">-->
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand btn-light btn-lg" href="index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Pages
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="index.html">Home Page</a>
+            <a class="dropdown-item" href="plotly.html">Diamond Visualizations</a>
+            <a class="dropdown-item" href="dataTable.html">Model Data</a>
+            <a class="dropdown-item" href="machineLearning.html">Machine Learning</a>
+          </div>
+        </li>
+        <!-- <li class="nav-item active">
+          <a class="nav-link" href="comparison.html">Comparison <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">Data</a>
+        </li> -->
+      <!-- </ul>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Relevant Work
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="https://ryanporritt.github.io/leaflet-challenge/index.html" target="_blank">Earthquake Leaflet</a>
+            <a class="dropdown-item" href="https://ryanporritt.github.io/plotly-challenge/index.html" target="_blank">Interactive Dashboard</a>
+            <a class="dropdown-item" href="https://ryanporritt.github.io/javascript-challenge/UFO-level-2/templates/index.html" target="_blank">Filterable Database</a>
+            <a class="dropdown-item" href="https://ryanporritt.github.io/D3-Challenge/index.html" target="_blank">Interactive Scatterplot</a>
+          </div>
+        </li> -->
+        <!-- <li class="nav-item active">
+          <a class="nav-link" href="comparison.html">Comparison <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">Data</a>
+        </li> -->
+      </ul>
+
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class = "box box-1">
+      <div class="row">
+        <div class="col-sm-12 col-md-12">
+          <h1>Machine Learning Research</h1>
+          <hr>
+          <p>In order to do our predictions, we created program that would iterate across three variables: Epochs, Nodes, and Layers</p>
+          <h4>Variables:</h4>
+          <figure>
+            <img src="../Resources/images/JNVariables.png" alt="Color Scale" class="img-fluid" width="800">
+          </figure>
+          <p>This is what we used to find model that best predicted diamond price. We ran this model for both a stratified sample set and a non-stratified sample set. There was little difference in the two sets of data.
+            But, we realized that the output data represented a data set in and of itself. We then were wondering if we could use that data set to determine the impact of each variable on the output accuracy of the model.
+            We used a function called Correlation Coefficiency (Corrcoef) to look at the relationship of changes in the number of Epochs, the number of total Nodes, and the number of Layers on the accuracy of the model.</p>
+          <h4>Loop:</h4>
+          <figure>
+            <img src="../Resources/images/JNLoop.png" alt="Color Scale" class="img-fluid" width="800">
+          </figure>
+          <h4>Overfitting</h4>
+          <figure>
+            <img src="../Resources/images/AccuracyDrop.png" alt="Color Scale" class="img-fluid" width="800">
+          </figure>
+          <h4>Coefficient Numbers:</h4>
+          <figure>
+            <img src="../Resources/images/JNCoeficients.png" alt="Color Scale" class="img-fluid" width="800">
+          </figure>
+          <p>Interestingly we saw that, generally, the more simple the model, the better it was at predicting accuracy.</p>
+          <h4>Most Accurate Models</h4>
+          <figure>
+            <img src="../Resources/images/TrainedModel.png" alt="Color Scale" class="img-fluid" width="800">
+          </figure>
+        </div>
+        <div class=" col-md-6">
+            <h4>Accuracy Stratified</h4>
+            <figure>
+                <img src="../Resources/images/accuracyStratified.png" alt="Color Scale" class="img-fluid" width="600">
+            </figure>
+        </div>
+        <div class=" col-md-6">
+            <h4>Accuracy Non-stratified</h4>
+            <figure>
+                <img src="../Resources/images/accuracyNon-stratified.png" alt="Color Scale" class="img-fluid" width="600">
+            </figure>
+        </div>
+      </div>
+    </div> 
+  </div> 
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="../static/js/data.js"></script>
+  <script src="../static/js/logic.js"></script>
+
+
+</body>
+
+
+</html>

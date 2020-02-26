@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Machine Learning</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="../static/css/style.css">
+ <!-- <link rel="stylesheet" href="styles.css">-->
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand btn-light btn-lg" href="index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Pages
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="index.html">Home Page</a>
+            <a class="dropdown-item" href="plotly.html">Diamond Visualizations</a>
+            <a class="dropdown-item" href="dataTable.html">Model Data</a>
+            <a class="dropdown-item" href="machineLearning.html">Machine Learning</a>
+          </div>
+        </li>
+        <!-- <li class="nav-item active">
+          <a class="nav-link" href="comparison.html">Comparison <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">Data</a>
+        </li> -->
+      <!-- </ul>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Relevant Work
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="https://ryanporritt.github.io/leaflet-challenge/index.html" target="_blank">Earthquake Leaflet</a>
+            <a class="dropdown-item" href="https://ryanporritt.github.io/plotly-challenge/index.html" target="_blank">Interactive Dashboard</a>
+            <a class="dropdown-item" href="https://ryanporritt.github.io/javascript-challenge/UFO-level-2/templates/index.html" target="_blank">Filterable Database</a>
+            <a class="dropdown-item" href="https://ryanporritt.github.io/D3-Challenge/index.html" target="_blank">Interactive Scatterplot</a>
+          </div>
+        </li> -->
+        <!-- <li class="nav-item active">
+          <a class="nav-link" href="comparison.html">Comparison <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">Data</a>
+        </li> -->
+      </ul>
+
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class = "box box-1">
+      <div class="row">
+        <div class="col-sm-12 col-md-12">
+          <h1>Diamond Price Prediction</h1>
+          <hr>
+          <h4>Hypothesis: Determine Price of Diamonds?</h5>
+          <h6><b>Four C’s:</b></h6>
+          <ul>
+            <li><b>Clarity:</b> the quality of transparency or purity</li>
+            <li><b>Carat:</b> A unit of weight for precious stones equal to 200mg</li>
+            <li><b>Cut:</b> The form or shape of the diamond</li>
+            <li><b>Color:</b> the absence of a colored tint in the diamond (the higher the color letter the more expensive the diamond)</li>
+          </ul>
+          <h4>Color:</h4>
+          <figure>
+            <img src="../Resources/images/ColorScale.png" alt="Color Scale" class="img-fluid" width="800">
+          </figure>
+          <h4>Cut:</h4>
+          <figure>
+            <img src="../Resources/images/cut.jpg" alt="Color Scale" class="img-fluid" width="800">
+          </figure>
+          <h4>Carat:</h4>
+          <figure>
+            <img src="../Resources/images/Carat.jpg" alt="Color Scale" class="img-fluid" width="800">
+          </figure>
+          <h4>Clarity:</h4>
+          <figure>
+            <img src="../Resources/images/Clarity.jpg" alt="Color Scale" class="img-fluid" width="800">
+          </figure>
+
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="https://www.petragems.com/education/diamond-color/" target="_blank">https://www.petragems.com/education/diamond-color/</a></li>
+            <li><a href="https://www.diamonds.pro/education/d-color-diamonds/" target="_blank">https://www.diamonds.pro/education/d-color-diamonds/</a></li>
+            <li><a href="https://www.jewellerymonthly.com/the-importance-of-diamond-cut-the-4-cs/" target="_blank">https://www.jewellerymonthly.com/the-importance-of-diamond-cut-the-4-cs/</a></li>
+            <li><a href="https://www.ringsforwomen.org/gemstone-jewelry/diamond-clarity/" target="_blank">https://www.ringsforwomen.org/gemstone-jewelry/diamond-clarity/</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-12 col-md-12">
+          <h4>Jupyter Notebook Analytics</h4>
+        </div>
+
+        <div class="col-sm-12 col-md-12">
+          <figure>
+            <img src="../Resources/images/JNBinning.png" alt="Binning" class="img-fluid" width="900">
+          </figure>
+        </div>
+
+        <div class="col-sm-12 col-md-12">
+          <figure>
+            <img src="../Resources/images/JNDummyEncoding.png" alt="Encoding" class="img-fluid" width="900">
+          </figure>
+        </div>
+
+        <div class="col-sm-12 col-md-12">
+          <figure>
+            <img src="../Resources/images/JNScalingNormalization.png" alt="Scaling" class="img-fluid" width="900">
+          </figure>
+        </div>
+
+        <div class="col-sm-12 col-md-12">
+          <figure>
+            <img src="../Resources/images/JNModelAccuracy.png" alt="Model" class="img-fluid" width="900">
+          </figure>
+        </div>
+
+        <div class="col-sm-12 col-md-12">
+          <figure>
+            <img src="../Resources/images/Diamonddashboard2.png" alt="Model" class="img-fluid" width="1200">
+          </figure>
+        </div>
+
+        <div class="col-sm-12 col-md-12">
+          <figure>
+            <img src="../Resources/images/Diamonddashboard1.png" alt="Model" class="img-fluid" width="1200">
+          </figure>
+        </div>
+
+        <div id="my_dataviz"></div>
+        <script src="https://d3js.org/d3.v4.js"></script>
+        <!-- <script src="https://d3js.org/d3.v3.min.js"></script> -->
+        <!-- <script src="https://d3js.org/d3.v5.min.js"></script> -->
+        <script src="../static/js/app.js"></script>
+
+      </div>
+    </div> 
+  </div> 
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="../static/js/data.js"></script>
+  <script src="../static/js/logic.js"></script>
+
+
+</body>
+
+
+</html>
