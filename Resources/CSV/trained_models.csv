@@ -1,4 +1,4 @@
-,Hidden Layers,Epochs Count,Total Node Count,Train Data Node Count,Train Data Loss,Train Data Accuracy,Test Data Loss,Test Data Accuracy
+,Hidden_Layers,Epochs_Count,Total_Node_Count,Train_Data_Node_Count,Train_Data_Loss,Train_Data_Accuracy,Test_Data_Loss,Test_Data_Accuracy
 0,0,20,21,21,0.32638762755706924,0.8646397,0.3279775432051665,0.86481273
 1,0,20,42,42,0.31687921332187347,0.8661476,0.32547561949078224,0.86384875
 2,0,20,63,63,0.31224977897560474,0.8684959,0.318984039432259,0.86637
